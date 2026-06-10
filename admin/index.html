@@ -7,13 +7,21 @@
 
     <title>Mahdi Admin Panel</title>
 
-    <!-- Netlify Identity لتسجيل الدخول وإعادة تعيين كلمة المرور -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
 
-    <!-- Decap CMS لوحة التحكم -->
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", function(user) {
+                if (!user) {
+                    window.netlifyIdentity.open();
+                }
+            });
+        }
+    </script>
+
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 
 </body>
