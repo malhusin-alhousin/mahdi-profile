@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- دعم اللغة العربية والإنجليزية -->
+    <meta charset="UTF-8">
+
+    <!-- جعل الموقع مناسب للموبايل والكمبيوتر -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- عنوان الموقع في المتصفح وجوجل -->
+    <title>Mahdi Al-Hussein | Fashion Model</title>
+
+    <!-- وصف الموقع لتحسين ظهوره في Google -->
+    <meta name="description"
+        content="Mahdi Al-Hussein Fashion Model specialized in classic suits, casual style, fashion shoots, and brand collaborations.">
+
+    <!-- كلمات مفتاحية تساعد في البحث -->
+    <meta name="keywords"
+        content="Mahdi Al-Hussein, مهدي الحسين, Fashion Model, Model Libya, Classic Suits, Casual Style">
+
+    <!-- ملف التصميم -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- خطوط احترافية -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- مكتبة الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- زر الرجوع للأعلى -->
+    <button class="scroll-top" id="scrollTopBtn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- شريط التنقل -->
+    <header class="navbar">
+
+        <!-- شعار الموقع -->
+        <div class="logo">Mahdi</div>
+
+        <!-- روابط الأقسام -->
+        <nav>
+            <a href="#home" id="navHome" class="active">Home</a>
+            <a href="#about" id="navAbout">About</a>
+            <a href="#skills" id="navSkills">Skills</a>
+            <a href="#gallery" id="navGallery">Gallery</a>
+            <a href="#contact" id="navContact">Contact</a>
+        </nav>
+
+        <!-- أزرار اللغة -->
+        <div class="lang-buttons">
+            <button onclick="changeLanguage('ar')">العربية</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+
+    </header>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero" id="home">
+
+        <!-- الصورة الرئيسية المؤقتة -->
+        <div class="hero-image reveal">
+            <img src="images/profile.jpg" alt="Mahdi Al-Hussein Fashion Model">
+        </div>
+
+        <!-- محتوى القسم الرئيسي -->
+        <div class="hero-content reveal">
+
+            <span class="small-name" id="smallName">Mahdi Al-Hussein</span>
+
+            <h1 id="name">Mahdi Al-Hussein</h1>
+
+            <h2 id="job">Fashion Model</h2>
+
+            <div class="gold-line"></div>
+
+            <p id="tagline">Classic Suits • Casual Style • Elegant Presence</p>
+
+            <!-- أزرار التواصل -->
+            <div class="buttons">
+
+                <a href="https://www.instagram.com/mahdialhousin?igsh=OW5oYm5peHlmZGxp" target="_blank"
+                    class="btn instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span id="btnInstagram">Instagram</span>
+                </a>
+
+                <a href="https://www.facebook.com/share/14gAwLz6GDS/" target="_blank" class="btn facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span id="btnFacebook">Facebook</span>
+                </a>
+
+                <a href="https://www.tiktok.com/@mahdi.alhousin?_r=1&_t=ZS-96vtLboQy2u" target="_blank"
+                    class="btn tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span id="btnTikTok">TikTok</span>
+                </a>
+
+                <a href="https://wa.me/218931958781" target="_blank" class="btn whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span id="btnWhatsApp">WhatsApp</span>
+                </a>
+
+                <a href="https://t.me/Mahdi_AlHousin" target="_blank" class="btn telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                    <span id="btnTelegram">Telegram</span>
+                </a>
+
+                <a href="mailto:mahdi.alhousin.2004@gmail.com" class="btn email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span id="btnEmail">Email</span>
+                </a>
+
+                <a href="tel:+218931958781" class="btn call">
+                    <i class="fa-solid fa-phone"></i>
+                    <span id="btnCall">Call Me</span>
+                </a>
+
+            </div>
+
+            <!-- زر تحميل CV مؤقت -->
+            <a href="cv/Mahdi-CV.pdf" class="download-btn" id="downloadCV" download>
+                <i class="fa-solid fa-download"></i>
+                Download CV
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- قسم نبذة عني -->
+    <section class="about" id="about">
+
+        <h2 id="aboutTitle" class="section-title reveal">About Me</h2>
+
+        <p id="aboutText" class="reveal">
+            Professional Fashion Model specializing in classic suits and modern casual wear.
+            Passionate about elegance, confidence, luxury style, and professional brand presentation.
+        </p>
+
+    </section>
+
+    <!-- قسم المهارات -->
+    <section class="skills" id="skills">
+
+        <h2 id="skillsTitle" class="section-title reveal">Modeling Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card reveal">
+                <i class="fa-solid fa-user-tie"></i>
+                <h3 id="skill1Title">Classic Suits</h3>
+                <p id="skill1Text">Elegant formal looks for events, brands, and professional campaigns.</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <i class="fa-solid fa-shirt"></i>
+                <h3 id="skill2Title">Casual Style</h3>
+                <p id="skill2Text">Modern youth fashion with confidence and clean presentation.</p>
+            </div>
+
+            <div class="skill-card reveal">
+                <i class="fa-solid fa-camera"></i>
+                <h3 id="skill3Title">Photoshoots</h3>
+                <p id="skill3Text">Professional poses for fashion photography and social media content.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats">
+
+        <div class="stat-box reveal">
+            <h3>10+</h3>
+            <p id="stat1">Fashion Looks</p>
+        </div>
+
+        <div class="stat-box reveal">
+            <h3>5+</h3>
+            <p id="stat2">Collaborations</p>
+        </div>
+
+        <div class="stat-box reveal">
+            <h3>3+</h3>
+            <p id="stat3">Social Platforms</p>
+        </div>
+
+    </section>
+
+    <!-- قسم معرض الصور -->
+    <section class="gallery" id="gallery">
+
+        <h2 id="galleryTitle" class="section-title reveal">Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="images/gallery1.jpg" alt="Gallery 1">
+            <img src="images/gallery2.jpg" alt="Gallery 2">
+            <img src="images/gallery3.jpg" alt="Gallery 3">
+
+        </div>
+
+    </section>
+
+    <!-- قسم التواصل -->
+    <section class="contact" id="contact">
+
+        <h2 id="contactTitle" class="section-title reveal">Contact Me</h2>
+
+        <p id="contactText" class="reveal">
+            Open for collaborations, fashion shoots, brand promotions, and modeling opportunities.
+        </p>
+
+        <div class="contact-info reveal">
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +218 931 958 781
+            </p>
+
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                mahdi.alhousin.2004@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-brands fa-telegram"></i>
+                @Mahdi_AlHousin
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- أسفل الموقع -->
+    <footer>
+        <p id="footerText">© 2026 Mahdi Al-Hussein. All Rights Reserved.</p>
+    </footer>
+
+    <!-- ملف الجافاسكربت -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
